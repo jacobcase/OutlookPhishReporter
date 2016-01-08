@@ -11,10 +11,10 @@ namespace OutlookPhishReporter
     [ComVisible(true)]
     public class PhishReporterRibbon : Office.IRibbonExtensibility
     {
-        private string phishButtonLabel = "Report Phishing";
+        private string phishButtonLabel = "Report a Phish!";
         private string phishScreentip = "Report phishing emails";
         private string phishSupertip = "Click this button to report the selected emails to the security team for phishing";
-
+        private string phishGroupLabel = "CIRT";
 
         private Office.IRibbonUI ribbon;
         private PhishReporterAddIn addin;
@@ -72,6 +72,11 @@ namespace OutlookPhishReporter
         public string OnPhishSupertip(Office.IRibbonControl control)
         {
             return this.phishSupertip;
+        }
+
+        public string OnGroupLabel(Office.IRibbonControl control)
+        {
+            return this.phishGroupLabel;
         }
 
         public void Ribbon_Load(Office.IRibbonUI ribbonUI)

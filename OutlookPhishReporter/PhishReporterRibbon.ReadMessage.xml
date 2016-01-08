@@ -3,16 +3,17 @@
     <ribbon>
         <tabs>
             <tab idMso="TabReadMessage">
-                <group id="phishReporterRibbonGroup">
-                  <button id="phishReporterButton"
-                          onAction="OnPhishClick"
-                          getImage="OnPhishGetImage"
-                          getScreentip="OnPhishScreentip"
-                          getLabel="OnPhishLabel"
-                          getSupertip="OnPhishSupertip"
-                          showImage="true"
-                          size="large"/>
-                </group>
+              <group id="phishReporterRibbonGroup"
+                     getLabel="OnGroupLabel">
+                <button id="phishReporterButton"
+                        onAction="OnPhishClick"
+                        getImage="OnPhishGetImage"
+                        getScreentip="OnPhishScreentip"
+                        getLabel="OnPhishLabel"
+                        getSupertip="OnPhishSupertip"
+                        showImage="true"
+                        size="large"/>
+              </group>
             </tab>
         </tabs>
     </ribbon>

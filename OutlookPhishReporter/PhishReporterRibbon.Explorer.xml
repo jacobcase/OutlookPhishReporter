@@ -3,7 +3,8 @@
     <ribbon>
         <tabs>
             <tab idMso="TabMail">
-                <group id="phishReporterRibbonGroup">
+                <group id="phishReporterRibbonGroup"
+                       getLabel="OnGroupLabel">
                     <button id="phishReporterButton" 
                             onAction="OnPhishClick" 
                             getImage="OnPhishGetImage"
